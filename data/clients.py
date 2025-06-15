@@ -63,7 +63,7 @@ class Clients:
                         id=int(row['id']),
                         firstName=row['firstName'],
                         lastName=row['lastName'],
-                        middleName=row['middleName'],
+                        # middleName=row['middleName'],
                         dateOfBirth=row['dateOfBirth'],
                     )
                     self.add_client_db(client)

@@ -6,11 +6,10 @@ from data.products import Products
 
 clientsDBInMemory = Clients()
 clientsDBInMemory.load_from_csv("data/clients.csv.txt")
+print(clientsDBInMemory.db)
 
 productsDBInMemory = Products()
-productsDBInMemory.load_from_csv("data/products.csv.txt")
-
-print(clientsDBInMemory.db)
+productsDBInMemory.load_from_csv("data/produits.csv.txt")
 print(productsDBInMemory.db)
 
 
