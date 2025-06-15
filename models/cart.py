@@ -32,3 +32,12 @@ class Cart(object):
     def __str__(self) -> str:
         return f"Cart {self.id} for client {self.clientId} ({self.userFriendlyName})" \
                f" with {len(self.items)} items"
+
+    def add_product(self, product_id: ProductId, quantity: Quantity = 1) -> bool:
+        if quantity <= 0:
+            return False
+
+        self.items.append((product_id, quantity))
+        self.updated_at = datetime.datetime.now()
+        return True
+    
