@@ -1,21 +1,33 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from data.clients import Clients
+from data.products import Products
 
-class Item(BaseModel):
-    name: str
-    description: str | None = None
-    price: float
-    tax: float | None = None
+clientsDBInMemory = Clients()
+clientsDBInMemory.load_from_csv("data/clients.csv.txt")
+
+productsDBInMemory = Products()
+productsDBInMemory.load_from_csv("data/products.csv.txt")
+
+print(clientsDBInMemory.db)
+print(productsDBInMemory.db)
 
 
-app = FastAPI()
-
-
-@app.post("/items/")
-async def create_item(item: Item):
-    return item
-
+# class Item(BaseModel):
+#     name: str
+#     description: str | None = None
+#     price: float
+#     tax: float | None = None
+#
+#
+# app = FastAPI()
+#
+#
+# @app.post("/items/")
+# async def create_item(item: Item):
+#     return item
+#
 
 
 

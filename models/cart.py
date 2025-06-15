@@ -40,4 +40,3 @@ class Cart(object):
         self.items.append((product_id, quantity))
         self.updated_at = datetime.datetime.now()
         return True
-    
