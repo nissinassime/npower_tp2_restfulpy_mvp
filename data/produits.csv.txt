@@ -1,0 +1,102 @@
+id,name,price
+1,Chaise de Bureau Ergonomique,18999
+2,Lampe de Bureau LED Intelligente,5450
+3,Thé Vert Matcha Biologique,2375
+4,Casque d'Écoute Sans Fil à Réduction de Bruit,14995
+5,Bouteille d'Eau en Acier Inoxydable,2999
+6,Haut-Parleur Bluetooth Portable,7800
+7,Tapis Tissé à la Main,21500
+8,Tablette de Chocolat Noir Gourmet,850
+9,Cafetière à Piston,4200
+10,Oreiller en Mousse à Mémoire de Forme,6230
+11,Balance de Cuisine Numérique,2595
+12,Tapis de Yoga avec Sangle de Transport,3800
+13,Sérum à la Vitamine C,3125
+14,Roman de Fiction à Couverture Rigide,2295
+15,Brosse à Dents Électrique,8999
+16,Bougie de Soja Parfumée,1950
+17,Ensemble de Planches à Découper en Bambou,3400
+18,Sac à Lunch Isotherme,2150
+19,Chiffons en Microfibre (paquet de 12),1899
+20,Hub Domotique Intelligent,11900
+21,Ensemble d'Haltères Ajustables,29999
+22,Friteuse à Air,9550
+23,Concentré de Café Infusé à Froid,1675
+24,Taie d'Oreiller en Soie,4500
+25,Ensemble de Bandes de Résistance,2495
+26,Support pour Ordinateur Portable,3200
+27,Lunettes Anti-Lumière Bleue,2850
+28,Sacs Alimentaires en Silicone Réutilisables,2050
+29,Bouilloire Électrique,5800
+30,Oreiller de Voyage pour le Cou,2699
+31,Batterie Externe Compacte,3995
+32,Tisane à la Camomille,1250
+33,Couverture Polaire Douce,4800
+34,Étagère Murale,7500
+35,Montre de Suivi d'Activité Physique,13500
+36,Contenants en Verre pour Préparation de Repas,4100
+37,Aspirateur Balai Sans Fil,24995
+38,Diffuseur d'Huiles Essentielles pour Aromathérapie,3900
+39,Poêle Antiadhésive,4950
+40,Ensemble d'Outils de Jardinage,5500
+41,Sac Étanche,3300
+42,Carnet de Croquis Professionnel,1800
+43,Goutteur à Café pour Verser,2750
+44,Baguette de Stérilisation UV-C,6800
+45,Couverture Lestée,11500
+46,Cadre Photo Numérique,10999
+47,Journal à Reliure en Cuir,2400
+48,Tasse à Café Isotherme,2195
+49,Kit de Jardin d'Herbes d'Intérieur,4300
+50,Poêle en Fonte,6200
+51,Chariot de Courses Pliable,4750
+52,Chargeur Mural USB Multi-Ports,2995
+53,Mélangeur à Haute Vitesse,14500
+54,Coffret Cadeau de Bombes de Bain,2800
+55,Bande Magnétique pour Couteaux,3100
+56,Sacs à Provisions en Maille Réutilisables,1550
+57,Convertisseur de Bureau Assis-Debout,19900
+58,Ensemble de Stylos Gel (24 Couleurs),2100
+59,Guirlande Lumineuse d'Extérieur,5999
+60,Paillasson,2350
+61,Ouvre-Bouteille de Vin Électrique,3400
+62,Support de Téléphone pour Voiture,1995
+63,Brosse Nettoyante pour le Visage,7200
+64,Jeu de Tournevis de Précision,2650
+65,Scanner de Documents,16500
+66,Tableau Blanc avec Marqueurs,4800
+67,Antivol de Vélo,3750
+68,Pot de Miel Artisanal,1495
+69,Purificateur d'Air Portable,9900
+70,Couverture de Pique-Nique,4200
+71,Pèse-Bagage Numérique,1750
+72,Trousse de Couture,1400
+73,Ensemble d'Organisateurs de Tiroir,2900
+74,Bouchons d'Oreilles à Isolation Sonore,1299
+75,Mixeur Plongeant,5300
+76,Ensemble de Tapis de Cuisson en Silicone,2250
+77,Trousse de Premiers Soins,3100
+78,Bouteille d'Eau Pliable,1900
+79,Tapis de Souris avec Repose-Poignet,1650
+80,Thermostat Intelligent,17999
+81,Manomètre pour Pneus,1350
+82,Lampe Frontale LED,2800
+83,Machine à Expresso,28500
+84,Grains de Maïs à Popcorn Gourmet,950
+85,Mousseur à Lait Manuel,1895
+86,Filtre à Café Réutilisable,1100
+87,Hydropulseur,6500
+88,Boîte de Gestion de Câbles,2500
+89,Appareil de Massage pour le Dos,8800
+90,Gant de Toilettage pour Animaux,1550
+91,Serviteur de Douche,3200
+92,Ensemble de Cuillères à Biscuits,1700
+93,Corde à Sauter,1450
+94,Tourne-disque Vinyle,12950
+95,Mini Projecteur,15500
+96,Ensemble de Peinture Acrylique,3400
+97,Ensemble Shaker à Cocktail,4100
+98,Hamac de Camping,5800
+99,Pierre à Aiguiser pour Couteaux,2999
+100,Masque de Sommeil,1395
+101,Bouteille d'Eau Intelligente,7500

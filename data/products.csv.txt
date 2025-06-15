@@ -1,0 +1,103 @@
+id,name,price
+1,Ergonomic Office Chair,18999
+2,Smart LED Desk Lamp,5450
+3,Organic Matcha Green Tea,2375
+4.Wireless Noise-Cancelling Headphones,14995
+5,Stainless Steel Water Bottle,2999
+6,Portable Bluetooth Speaker,7800
+7,Hand-Woven Area Rug,21500
+8,Gourmet Dark Chocolate Bar,850
+9,French Press Coffee Maker,4200
+10,Memory Foam Pillow,6230
+11,Digital Kitchen Scale,2595
+12,Yoga Mat with Carrying Strap,3800
+13,Vitamin C Serum,3125
+14,Hardcover Fiction Novel,2295
+15,Electric Toothbrush,8999
+16,Scented Soy Candle,1950
+17,Bamboo Cutting Board Set,3400
+18,Insulated Lunch Bag,2150
+19,Microfiber Cleaning Cloths (12-pack),1899
+20,Smart Home Hub,11900
+21,Adjustable Dumbbell Set,29999
+22,Air Fryer,9550
+23,Cold Brew Coffee Concentrate,1675
+24,Silk Pillowcase,4500
+25,Resistance Bands Set,2495
+26,Laptop Stand,3200
+27,Blue Light Blocking Glasses,2850
+28,Reusable Silicone Food Bags,2050
+29,Electric Kettle,5800
+30,Travel Neck Pillow,2699
+31,Compact Power Bank,3995
+32,Herbal Chamomile Tea,1250
+33,Plush Fleece Blanket,4800
+34,Wall-Mounted Bookshelf,7500
+35,Fitness Tracker Watch,13500
+36,Glass Meal Prep Containers,4100
+37,Cordless Vacuum Cleaner,24995
+38,Aromatherapy Essential Oil Diffuser,3900
+39,Non-Stick Frying Pan,4950
+40,Gardening Tool Set,5500
+41,Waterproof Dry Bag,3300
+42,Professional Sketchbook,1800
+43,Pour-Over Coffee Dripper,2750
+44,UV-C Sanitizing Wand,6800
+45,Weighted Blanket,11500
+46,Digital Photo Frame,10999
+47,Leather-Bound Journal,2400
+48,Insulated Coffee Mug,2195
+49,Indoor Herb Garden Kit,4300
+50,Cast Iron Skillet,6200
+51,Foldable Shopping Cart,4750
+52,Multi-Port USB Wall Charger,2995
+53,High-Speed Blender,14500
+54,Bath Bomb Gift Set,2800
+55,Magnetic Knife Strip,3100
+56,Reusable Mesh Produce Bags,1550
+57,Standing Desk Converter,19900
+58,Gel Pen Set (24 Colors),2100
+59,Outdoor String Lights,5999
+60,Doormat,2350
+61,Electric Wine Opener,3400
+62,Car Phone Mount,1995
+63,Facial Cleansing Brush,7200
+64,Precision Screwdriver Set,2650
+65,Document Scanner,16500
+66,Whiteboard with Markers,4800
+67,Bike Lock,3750
+68,Artisanal Honey Jar,1495
+69,Portable Air Purifier,9900
+70,Picnic Blanket,4200
+71,Digital Luggage Scale,1750
+72,Sewing Kit,1400
+73,Drawer Organizer Set,2900
+74,Noise-Isolating Earplugs,1299
+75,Immersion Hand Blender,5300
+76,Silicone Baking Mat Set,2250
+77,First Aid Kit,3100
+78,Collapsible Water Bottle,1900
+79,Mouse Pad with Wrist Rest,1650
+80,Smart Thermostat,17999
+81,Tire Pressure Gauge,1350
+82,LED Headlamp,2800
+83,Espresso Machine,28500
+84,Gourmet Popcorn Kernels,950
+85,Handheld Milk Frother,1895
+86,Reusable Coffee Filter,1100
+87,Water Flosser,6500
+88,Cable Management Box,2500
+89,Back Massager,8800
+90,Pet Grooming Glove,1550
+91,Shower Caddy,3200
+92,Cookie Scoop Set,1700
+93,Jump Rope,1450
+94,Vinyl Record Player,12950
+95,Mini Projector,15500
+96,Acrylic Paint Set,3400
+97,Cocktail Shaker Set,4100
+98,Camping Hammock,5800
+99,Knife Sharpening Stone,2999
+100,Sleep Mask,1395
+101,Smart Water Bottle,7500
+
