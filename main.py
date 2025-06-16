@@ -13,20 +13,46 @@ productsDBInMemory.load_from_csv("data/produits.csv.txt")
 print(productsDBInMemory.db)
 
 
-# class Item(BaseModel):
-#     name: str
-#     description: str | None = None
-#     price: float
-#     tax: float | None = None
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float | None = None
+
+
+app = FastAPI()
+
+
+@app.post("/items/")
+async def create_item(item: Item):
+    return item
+
+
+# @app.get("/carts/")
+# async def get_carts():
 #
-#
-# app = FastAPI()
-#
-#
-# @app.post("/items/")
-# async def create_item(item: Item):
-#     return item
-#
+
+
+@app.get("/clients/")
+async def get_clients():
+    return clientsDBInMemory.db
+
+# @app.get("/client/{id}")
+# async def get_client(id: int):
+
+
+# @app.get("/orders/")
+# async def get_orders():
+#     return clientsDBInMemory.db
+
+@app.get("/products/")
+async def get_products():
+    return productsDBInMemory.db
+
+
+
+
+
 
 
 

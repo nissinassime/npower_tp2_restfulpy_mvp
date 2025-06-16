@@ -1,28 +1,22 @@
+import datetime
+from enum import Enum
+from typing import List
+from fastapi import FastAPI
+from pydantic import BaseModel
+import datetime
+import enum
 
+
+#Default user friendly name "Cart #id" for example
+
+type OrderId = int
 
 type ProductId = int
 
-class Product:
+class Product(BaseModel):
     id: ProductId
     name: str
     priceInCents: int # in cents
     quantity: int
     # sku: str
 
-    def __init__(self, id: ProductId,  name: str, priceInCents: int, quantity: int = 0) -> None:  # sku: str,
-        self.id = id
-        self.name = name
-        self.priceInCents = priceInCents
-        self.quantity = quantity
-        # self.sku = sku
-
-    def __str__(self) -> str:
-        return f"{self.name}" # (SKU: {self.sku})"
-
-    def __repr__(self) -> str:
-        return f"Product(id={self.id}, name='{self.name}', price={self.priceInCents}, quantity={self.quantity})"
-
-    def __eq__(self, other: object) -> bool:
-        if not isinstance(other, Product):
-            return NotImplemented
-        return self.id == other.id # and self.sku == other.sku
