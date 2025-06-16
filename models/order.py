@@ -6,15 +6,15 @@ from pydantic import BaseModel
 import datetime
 import enum
 
-
+from domains.cart import CartId
 from domains.client import ClientId
-from domains.order import Status
+from domains.order import Status, OrderId
 from domains.product import Product, ProductId
 from utils.generate_ids import generate_ids
 
 #Default user friendly name "Cart #id" for example
 
-type OrderId = int
+
 
 
 
@@ -22,10 +22,10 @@ type OrderId = int
 class Order(BaseModel):
     id: OrderId
     clientId: ClientId
-    userFriendlyName: str | None
-    create_at: datetime.datetime | None
-    updated_at: datetime.datetime | None
-    status: Status | None
+    cartId: CartId
+    create_at: datetime.datetime | None = datetime.datetime.now()
+    updated_at: datetime.datetime | None = datetime.datetime.now()
+    status: Status | None = Status.EMPTY
 
 
 

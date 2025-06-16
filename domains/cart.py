@@ -5,7 +5,7 @@ import DateTime
 
 from domains.client import ClientId
 from domains.product import Product, ProductId
-from utils.generate_ids import generate_ids
+# from utils.generate_ids import generate_ids
 
 #Default user friendly name "Cart #id" for example
 
@@ -20,9 +20,9 @@ class Cart(object):
     updated_at: datetime.datetime
     items: list[tuple[ProductId, Quantity]]
 
-    def __init__(self, id: CartId, clientId: ClientId, userFriendlyName: str = "My New Cart",
+    def __init__(self, id: CartId, clientId: ClientId, userFriendlyName: str = "Mon Nouveau Panier",
                  items: list[tuple[ProductId, Quantity]] = None) -> None:
-        self.id = id # generate_ids()
+        self.id = clientId # generate_ids()
         self.clientId = clientId
         self.userFriendlyName = userFriendlyName
         self.create_at = datetime.datetime.now()
@@ -33,10 +33,23 @@ class Cart(object):
         return f"Cart {self.id} for client {self.clientId} ({self.userFriendlyName})" \
                f" with {len(self.items)} items"
 
-    def add_product(self, product_id: ProductId, quantity: Quantity = 1) -> bool:
+    def find_product_by_id(self, product_id: ProductId) -> int | None:
+        existing_idx = None
+        for idx, e in enumerate(self.items):
+            if e[0] == product_id:
+                existing_idx = idx
+                break
+        return existing_idx
+
+
+    def add_products(self, product_id: ProductId, quantity: Quantity = 1) -> bool:
         if quantity <= 0:
             return False
+        existing_idx = self.find_product_by_id(product_id)
+        if existing_idx is not None:
+            self.items[existing_idx] = (product_id, self.items[existing_idx][1] + quantity)
+        else:
+            self.items.append((product_id, quantity))
 
-        self.items.append((product_id, quantity))
         self.updated_at = datetime.datetime.now()
         return True

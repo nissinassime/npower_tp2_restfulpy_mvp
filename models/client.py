@@ -3,16 +3,17 @@ from pydantic import BaseModel
 import datetime
 import enum
 
+from domains.client import ClientId
+
 MIDDLE_NAME_DEFAULT_PLACEHOLDER = '_'
 
-type ClientId = int
 
 
 class Client(BaseModel):
     id: ClientId
     firstName: str
     lastName: str
-    dateOfBirth: datetime.datetime | None
+    dateOfBirth: str | datetime.datetime | None = datetime.datetime.now()
 
     # middleName: str
     # paymentDetail: PaymentDetail | str | None

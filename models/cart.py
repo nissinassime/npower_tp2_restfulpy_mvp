@@ -6,18 +6,18 @@ from typing import List
 
 import DateTime
 
+from domains.cart import CartId, Quantity
 from domains.client import ClientId
 from domains.product import Product, ProductId
 
 #Default user friendly name "Cart #id" for example
 
-type CartId = int
-type Quantity = int
+
 
 class Cart(BaseModel):
     id: CartId
     clientId: ClientId
-    userFriendlyName: str | None
-    create_at: datetime.datetime | None
-    updated_at: datetime.datetime | None
-    items: list[tuple[ProductId, Quantity]] | None
+    userFriendlyName: str | None = "Mon Panier Aujourd'hui"
+    create_at: datetime.datetime | None = datetime.datetime.now()
+    updated_at: datetime.datetime | None = datetime.datetime.now()
+    items: list[dict[ProductId, Quantity]] | None = []

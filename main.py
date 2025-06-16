@@ -1,16 +1,23 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from data.clients import Clients
-from data.products import Products
+from data.cartsdao import CartsDao
+from data.clientsdao import ClientsDao
+from data.productsdao import ProductsDao
 
-clientsDBInMemory = Clients()
-clientsDBInMemory.load_from_csv("data/clients.csv.txt")
-print(clientsDBInMemory.db)
+cartsDbInMemory = CartsDao()
+cartsDbInMemory.load_from_json('data/carts.json')
+print(cartsDbInMemory.db)
 
-productsDBInMemory = Products()
-productsDBInMemory.load_from_csv("data/produits.csv.txt")
-print(productsDBInMemory.db)
+# clientsDbInMemory = ClientsDao()
+# clientsDbInMemory.load_from_csv("data/clients.csv.txt")
+# print(clientsDbInMemory.db)
+#
+# productsDbInMemory = ProductsDao()
+# productsDbInMemory.load_from_csv("data/produits.csv.txt")
+# print(productsDbInMemory.db)
+
+
 
 
 class Item(BaseModel):
@@ -33,9 +40,9 @@ async def create_item(item: Item):
 #
 
 
-@app.get("/clients/")
-async def get_clients():
-    return clientsDBInMemory.db
+# @app.get("/clients/")
+# async def get_clients():
+#     return clientsDbInMemory.db
 
 # @app.get("/client/{id}")
 # async def get_client(id: int):
@@ -45,9 +52,12 @@ async def get_clients():
 # async def get_orders():
 #     return clientsDBInMemory.db
 
-@app.get("/products/")
-async def get_products():
-    return productsDBInMemory.db
+
+# # NOTE TP2 1. Liste de produits disponibles
+# #  Produit = tuple (id, nom, prix)
+# @app.get("/products/")
+# async def get_products():
+#     return productsDbInMemory.db
 
 
 

@@ -5,7 +5,7 @@ from typing import List
 from models.product import Product, ProductId
 
 
-class Products:
+class ProductsDao:
     db: dict[ProductId, Product]
     created_at: datetime.datetime
     updated_at: datetime.datetime

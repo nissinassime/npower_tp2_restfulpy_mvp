@@ -6,17 +6,17 @@ from pydantic import BaseModel
 import datetime
 import enum
 
+from domains.product import ProductId
+
 
 #Default user friendly name "Cart #id" for example
 
-type OrderId = int
 
-type ProductId = int
 
 class Product(BaseModel):
     id: ProductId
     name: str
     priceInCents: int # in cents
-    quantity: int
+    quantity: int | None = 1
     # sku: str
 

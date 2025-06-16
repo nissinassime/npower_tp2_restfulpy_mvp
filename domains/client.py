@@ -1,7 +1,7 @@
 import datetime
 import enum
 
-from utils.generate_ids import generate_ids
+# from utils.generate_ids import generate_ids
 
 MIDDLE_NAME_DEFAULT_PLACEHOLDER = '_'
 
@@ -17,12 +17,12 @@ class Client:
     id: ClientId
     firstName: str
     lastName: str
-    dateOfBirth: datetime.datetime | None
+    dateOfBirth: str | datetime.datetime | None
     # middleName: str
     # paymentDetail: str | None
     # cart: list[Cart]
     
-    def __init__(self, id: ClientId, firstName: str, lastName: str,  dateOfBirth: datetime.datetime = None): #, cart = []): #middleName: str = None,
+    def __init__(self, id: ClientId, firstName: str, lastName: str,  dateOfBirth: str | datetime.datetime = None): #, cart = []): #middleName: str = None,
         self.id = id # generate_ids()
         self.firstName = firstName
         self.lastName = lastName

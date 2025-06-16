@@ -1,5 +1,5 @@
 from typing import Tuple, Dict
-from data.products import Products
+from data.productsdao import ProductsDao
 
 
 def get_available_products() -> Tuple[Dict[str, any], ...]:
@@ -11,7 +11,7 @@ def get_available_products() -> Tuple[Dict[str, any], ...]:
     """
     try:
         products = []
-        products_db = Products()
+        products_db = ProductsDao()
         products_db.load_from_csv()
 
         for product in products_db.db.values():

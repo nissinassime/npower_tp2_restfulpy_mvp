@@ -7,7 +7,7 @@ from models.client import Client, ClientId
 from models.product import Product, ProductId
 
 
-class Clients:
+class ClientsDao:
     db: dict[ClientId, Client]
     created_at: datetime.datetime
     updated_at: datetime.datetime
