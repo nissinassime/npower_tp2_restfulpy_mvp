@@ -9,7 +9,7 @@ class Product(object):
     quantity: int
     # sku: str
 
-    def __init__(self, id: ProductId,  name: str, priceInCents: int, quantity: int = 0) -> None:  # sku: str,
+    def __init__(self, id: ProductId,  name: str, priceInCents: int, quantity: int = 0):  # sku: str,
         self.id = id
         self.name = name
         self.priceInCents = priceInCents

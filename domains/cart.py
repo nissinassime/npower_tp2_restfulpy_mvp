@@ -20,8 +20,10 @@ class Cart(object):
     updated_at: datetime.datetime
     items: list[tuple[ProductId, Quantity]]
 
-    def __init__(self, id: CartId, clientId: ClientId, userFriendlyName: str = "Mon Nouveau Panier",
-                 items: list[tuple[ProductId, Quantity]] = None) -> None:
+    def __init__(self, id: CartId,
+                 clientId: ClientId,
+                 userFriendlyName: str = "Mon Nouveau Panier",
+                 items: list[tuple[ProductId, Quantity]] = []):
         self.id = clientId # generate_ids()
         self.clientId = clientId
         self.userFriendlyName = userFriendlyName
@@ -31,7 +33,14 @@ class Cart(object):
 
     def __str__(self) -> str:
         return f"Cart {self.id} for client {self.clientId} ({self.userFriendlyName})" \
-               f" with {len(self.items)} items"
+               f" with {(self.items)} items"
+
+    # return f"Cart {self.id} for client {self.clientId} ({self.userFriendlyName})" \
+    #        f" with {len(self.items)} items"
+
+    def __repr__(self) -> str:
+        return f"Cart(id={self.id}, clientId={self.clientId}, userFriendlyName={self.userFriendlyName}, items={self.items})"
+
 
     def find_product_by_id(self, product_id: ProductId) -> int | None:
         existing_idx = None

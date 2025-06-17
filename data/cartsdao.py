@@ -42,15 +42,20 @@ class CartsDao:
         try:
             with open(file_path, 'r') as f:
                 carts_data = json.load(f)
-                print(carts_data)
+                # print(type(carts_data))
+                # print(carts_data)
                 for carts_id, cart_data in carts_data.items():
-                    print(carts_id, ' ->>> ', cart_data)
+                    # print(type(cart_data))
+                    # print(list(map(lambda e: (e['productId'],e['quantity']), cart_data)))
+                    # print(carts_id, ' ->>> ', cart_data)
                     cart = Cart(
-                        id=carts_id,
-                        clientId=carts_id,
-                        userFriendlyName=cart_data.get('userFriendlyName', 'Mon Nouveau Panier Aujourdhui {id}'),
-                        items=[(prodid, qtty) for prodid in cart_data.get('productId', UNKNOWN_PRODUCT_ID) for qtty in cart_data.get('quantity', 0) ]
+                        id=int(carts_id),
+                        clientId=int(carts_id),
+                        userFriendlyName=f"Mon Nouveau Panier Aujourdhui {carts_id}",
+                        items = list(map(lambda e: (e['productId'],e['quantity']), cart_data))
+                        # [(prodid, qtty) for prodid in cart_data.get('productId', UNKNOWN_PRODUCT_ID) for qtty in cart_data.get('quantity', 0) ]
                     )
+                    # print(cart)
                     self.db[cart.clientId] = cart
                 self.updated_at = datetime.datetime.now()
             return True

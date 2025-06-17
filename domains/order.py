@@ -28,7 +28,7 @@ class Order(object):
     updated_at: datetime.datetime
     status: Status
 
-    def __init__(self, id: OrderId, clientId: ClientId, cartId: CartId, status: Status = Status.EMPTY) -> None:
+    def __init__(self, id: OrderId, clientId: ClientId, cartId: CartId, status: Status = Status.EMPTY):
         self.id = id
         self.clientId = clientId
         self.cartId: cartId
