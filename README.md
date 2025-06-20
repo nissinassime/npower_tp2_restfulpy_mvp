@@ -31,3 +31,23 @@ plus acheté, etc.
 └── requirements.txt
  # (Optionnel) Bibliothèques utilisées si nécessaires
 
+
+# Architecture generale de l'app
+├── app
+│   ├── __init__.py
+│   ├── main.py
+│   ├── dependencies.py
+│   └── routers
+│   │   ├── __init__.py
+│   │   ├── carts.py
+│   │   └── users.py
+│   │   └── clients.py
+│   │   └── orders.py
+│   │   └── products.py
+│   │   └── requetes.py
+│   │   └── statistiques.py
+│   │   └── rawdb.py
+│   └── internal
+│       ├── __init__.py
+│       └── admin.py
+
